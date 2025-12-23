@@ -384,7 +384,7 @@ export const StepOffer = ({ data }: StepOfferProps) => {
               <span className="text-2xl">🍵</span>
               <span className="font-bold">Mounjaro de Pobre</span>
             </div>
-            <span className="text-2xl font-black text-primary">R$ 47,90</span>
+            <span className="text-2xl font-black text-primary">R$ 37,90</span>
           </div>
         </div>
 
@@ -416,7 +416,7 @@ export const StepOffer = ({ data }: StepOfferProps) => {
               Se ele não atender às suas expectativas nos primeiros 30 dias após a compra, nós reembolsaremos todo o valor que você pagou, sem fazer perguntas.
             </p>
             <p className="text-primary font-bold">
-              Basta enviar um e-mail para o suporte em oficialmounjarodepobre@gmail.com
+              Basta enviar um e-mail para o suporte em arkanintelligence@gmail.com
             </p>
           </div>
         </div>
