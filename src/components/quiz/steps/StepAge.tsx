@@ -19,7 +19,7 @@ const ageOptions = [
 
 export const StepAge = ({ data, onNext }: StepAgeProps) => {
   return (
-    <QuizLayout progress={0} showLogo={false} showProgress={false}>
+    <QuizLayout progress={0} showProgress={false}>
       <div className="flex-1 flex flex-col items-center justify-center animate-fade-in">
         <h1 className="text-2xl font-extrabold text-foreground text-center mb-2">
           Antes de começar...
@@ -27,7 +27,7 @@ export const StepAge = ({ data, onNext }: StepAgeProps) => {
         <p className="text-muted-foreground text-center mb-8">
           Qual é a sua idade?
         </p>
-        
+
         <div className="grid grid-cols-2 gap-4 w-full">
           {ageOptions.map((option) => (
             <button
@@ -35,10 +35,10 @@ export const StepAge = ({ data, onNext }: StepAgeProps) => {
               onClick={() => onNext(option.value)}
               className="flex flex-col items-center gap-3 p-4 rounded-2xl border-2 border-border bg-card shadow-sm hover:border-primary/50 hover:shadow-lg active:scale-[0.98] transition-all duration-200"
             >
-              <div className="w-20 h-20 rounded-full overflow-hidden">
-                <img 
-                  src={option.image} 
-                  alt={`Idade ${option.label}`} 
+              <div className="w-32 h-32 rounded-full overflow-hidden">
+                <img
+                  src={option.image}
+                  alt={`Idade ${option.label}`}
                   className="w-full h-full object-cover"
                 />
               </div>
