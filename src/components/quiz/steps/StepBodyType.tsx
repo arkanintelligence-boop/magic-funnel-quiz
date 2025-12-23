@@ -26,25 +26,25 @@ export const StepBodyType = ({ data, onNext, progress }: StepBodyTypeProps) => {
           </h1>
         </div>
         
-        <div className="grid grid-cols-3 gap-3">
+        <div className="flex flex-col gap-3">
           {options.map((option) => (
             <button
               key={option.value}
               onClick={() => onNext(option.value)}
-              className={`flex flex-col items-center gap-2 p-3 rounded-xl border-2 transition-all duration-200 hover:border-primary/50 hover:shadow-lg active:scale-[0.98] ${
+              className={`flex items-center justify-between p-4 rounded-xl border-2 transition-all duration-200 hover:border-primary/50 hover:shadow-lg active:scale-[0.98] ${
                 data.bodyType === option.value 
                   ? "border-primary bg-primary/5 shadow-lg" 
                   : "border-border bg-card shadow-sm"
               }`}
             >
-              <div className="w-20 h-28 rounded-lg overflow-hidden bg-muted">
+              <span className="font-semibold text-foreground">{option.label}</span>
+              <div className="w-16 h-16 rounded-lg overflow-hidden">
                 <img 
                   src={option.image} 
                   alt={option.label} 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="font-bold text-sm text-foreground">{option.label}</span>
             </button>
           ))}
         </div>

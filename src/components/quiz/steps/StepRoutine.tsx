@@ -23,7 +23,7 @@ export const StepRoutine = ({ data, onNext, progress }: StepRoutineProps) => {
           <h1 className="text-xl font-extrabold text-foreground">
             Como é o seu dia a dia?
           </h1>
-          <p className="text-primary text-sm mt-2">
+          <p className="text-primary text-sm mt-2 font-medium">
             Sua rotina diária também faz diferença!
           </p>
         </div>

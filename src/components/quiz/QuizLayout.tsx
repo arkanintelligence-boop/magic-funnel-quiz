@@ -18,12 +18,11 @@ export const QuizLayout = ({
     <div className="min-h-screen bg-background flex flex-col">
       {showLogo && (
         <header className="py-4 flex justify-center">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">🍵</span>
-            <span className="font-extrabold text-lg text-primary">
-              MOUNJARO<span className="text-foreground text-sm align-super">DE</span>POBRE
-            </span>
-          </div>
+          <img 
+            src={logo} 
+            alt="Mounjaro de Pobre" 
+            className="h-10 w-auto"
+          />
         </header>
       )}
       

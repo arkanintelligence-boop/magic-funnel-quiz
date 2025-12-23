@@ -35,7 +35,7 @@ export const StepObstacle = ({ data, onNext, progress }: StepObstacleProps) => {
       <div className="flex-1 flex flex-col animate-fade-in">
         <div className="text-center mb-8 mt-4">
           <h1 className="text-xl font-extrabold text-foreground">
-            O que mais te <span className="text-red-accent">impede</span>
+            O que mais te <span className="text-red-500">impede</span>
           </h1>
           <h2 className="text-xl font-extrabold text-primary">
             de emagrecer?
