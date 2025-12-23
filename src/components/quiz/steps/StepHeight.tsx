@@ -3,7 +3,7 @@ import { QuizLayout } from "@/components/quiz/QuizLayout";
 import { QuizInput } from "@/components/quiz/QuizInput";
 import { QuizButton } from "@/components/quiz/QuizButton";
 import { QuizData } from "@/data/quizData";
-import { Ruler } from "lucide-react";
+import { ClipboardList } from "lucide-react";
 
 interface StepHeightProps {
   data: QuizData;
@@ -34,7 +34,7 @@ export const StepHeight = ({ data, onNext, progress }: StepHeightProps) => {
         
         <div className="flex flex-col gap-4">
           <QuizInput
-            icon={<Ruler className="w-5 h-5" />}
+            icon={<ClipboardList className="w-5 h-5" />}
             placeholder="Digite sua altura aqui"
             value={height}
             onChange={(e) => setHeight(e.target.value)}

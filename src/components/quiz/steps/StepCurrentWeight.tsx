@@ -3,7 +3,7 @@ import { QuizLayout } from "@/components/quiz/QuizLayout";
 import { QuizInput } from "@/components/quiz/QuizInput";
 import { QuizButton } from "@/components/quiz/QuizButton";
 import { QuizData } from "@/data/quizData";
-import { Scale } from "lucide-react";
+import { ClipboardList } from "lucide-react";
 
 interface StepCurrentWeightProps {
   data: QuizData;
@@ -34,7 +34,7 @@ export const StepCurrentWeight = ({ data, onNext, progress }: StepCurrentWeightP
         
         <div className="flex flex-col gap-4 mb-4">
           <QuizInput
-            icon={<Scale className="w-5 h-5" />}
+            icon={<ClipboardList className="w-5 h-5" />}
             placeholder="Digite seu peso atual aqui"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
